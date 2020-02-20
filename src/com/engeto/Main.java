@@ -1,8 +1,29 @@
 package com.engeto;
+import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-        System.out.println("Hello World");
+
+        Scanner scanner = new Scanner (System.in);
+
+        System.out.println("I will tell you a story, but I need some information first.");
+        System.out.println("What is the main character called?");
+
+
+        String message1 = scanner.nextLine();
+
+
+        System.out.println("What is their job?");
+
+        String message2 = scanner.nextLine();
+
+
+        System.out.println("Here is the story:");
+        System.out.println("Once upon a time there was " + message1 +", who was a" + message2 +".\n" +
+                "On the way to work, " + message1 + " reflected on life.\n" +
+                "Perhaps " + message1 + " will not be a " + message2 +" forever.");
+
     }
 }
+
